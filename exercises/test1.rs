@@ -19,3 +19,11 @@ fn verify_test() {
     assert_eq!(55, price1);
     assert_eq!(80, price2);
 }
+
+fn calculate_price(unit_count: i32) -> i32 {
+    if unit_count > 40 {
+        unit_count * 1
+    } else {
+        unit_count * 2
+    }
+}
